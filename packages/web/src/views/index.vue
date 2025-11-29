@@ -77,10 +77,6 @@ const Contact = shallowRef({
           {{ dayjs(__BUILD_TIME__).format('YYYY-MM-DD HH:mm:ss') }}
         </p>
         <p>
-          · Last update :
-          {{ dayjs('2025-11-22').format('YYYY-MM-DD') }}
-        </p>
-        <p>
           · OpenSource (MIT) :
           <a href="https://github.com/Kuriyota/Kuriyota.com">
             Kuriyota/Kuriyota.com
