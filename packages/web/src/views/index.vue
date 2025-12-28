@@ -119,6 +119,10 @@ const Contact = shallowRef({
       <hr />
       <div>
         <p>
+          · {{ t(['Links', '友情链接']) }} :
+          <a href="https://maao.cc">{{ t(["Here's Mars", '这里是毛毛']) }}</a>
+        </p>
+        <p>
           · {{ t(['Build time', '构建时间']) }} :
           {{ dayjs(__BUILD_TIME__).format('YYYY-MM-DD HH:mm:ss') }}
         </p>
