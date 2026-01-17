@@ -8,7 +8,7 @@ import { HOST } from '@/scripts/api';
 const { isFetching, data, execute } = useFetch<any>(HOST + '/status');
 const status = computed(() => JSON.parse(data.value));
 
-const __BUILD_TIME__ = import.meta.env.VITE_BUILD_TIME;
+const __BUILD_TIME__ = window.__BUILD_TIME__;
 
 const { t } = useI18n();
 
@@ -125,6 +125,10 @@ const Contact = shallowRef({
         <p>
           · {{ t(['Build time', '构建时间']) }} :
           {{ dayjs(__BUILD_TIME__).format('YYYY-MM-DD HH:mm:ss') }}
+          <span class="text-gray-500"
+            >({{ Math.floor(dayjs(__BUILD_TIME__).diff(dayjs(), 'day'))
+            }}{{ t([' day(s) ago', ' 天之前']) }})</span
+          >
         </p>
         <p>
           · {{ t(['OpenSource', '开源']) }} (MIT) :
