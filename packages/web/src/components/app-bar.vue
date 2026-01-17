@@ -4,7 +4,8 @@ const { locale, t } = useI18n();
 </script>
 
 <template>
-  <div class="font-mono py-2 px-3 flex justify-between items-center">
+  <div
+    class="container-bar font-mono py-2 px-3 flex justify-between items-center">
     <RouterLink to="/" class="text">
       <span class="hover">Kuriyona's Space</span>
     </RouterLink>
@@ -19,3 +20,9 @@ const { locale, t } = useI18n();
     </div>
   </div>
 </template>
+
+<style scoped>
+.container-bar {
+  box-shadow: 0 0 50px #fff2;
+}
+</style>

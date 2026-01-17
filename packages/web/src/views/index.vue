@@ -13,11 +13,11 @@ const __BUILD_TIME__ = window.__BUILD_TIME__;
 const { t } = useI18n();
 
 const Contact = shallowRef({
-  Github: 'https://github.com/Kuriyota',
+  Github: 'https://github.com/Kuriyona',
   Bilibili: 'https://space.bilibili.com/650631530',
   X: 'https://x.com/kuriyona',
   Zhihu: 'https://www.zhihu.com/people/cn-chestnut',
-  Telegram: 'https://t.me/Kuriyota',
+  Telegram: 'https://t.me/Kuriyona',
   'Kuriyota@outlook.com': 'mailto:kuriyota@outlook.com'
 });
 </script>
@@ -146,7 +146,7 @@ const Contact = shallowRef({
         </p>
         <p>
           · {{ t(['Copyright', '版权所有']) }} ©
-          {{ dayjs().format('YYYY') }} Kuriyota. All rights reserved.
+          {{ dayjs().format('YYYY') }} Kuriyona. All rights reserved.
         </p>
       </div>
     </main>
